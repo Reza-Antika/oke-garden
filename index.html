@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+      <title>Oke Garden</title>
+   </head>
+   <body >
+    <!-- Navbar Start -->
+      <div class="flex justify-between px-16 py-5 bg-white shadow-sm fixed w-full">
+         <a href="#Home">
+            <img src="image/logo.png" class="w-60 h-18" />
+         </a>
+
+         <div class="flex">
+            <a href="#Home">
+                <button class="hover:bg-gray-100 text-slate-600 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center" type="button">Beranda</button>
+            </a>
+
+            <button class="text-slate-600 hover:bg-gray-100 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center" type="button" data-dropdown-toggle="layanan">Layanan <i class="fa-solid fa-caret-down ml-2"></i></button>
+            <!-- Dropdown menu -->
+            <div class="hidden bg-white text-base rounded shadow my-4" id="layanan">
+               <ul class="py-1" aria-labelledby="layanan">
+                  <li>
+                     <a href="#PT" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Pesan Taman</a>
+                  </li>
+                  <li>
+                     <a href="#PD" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Pesan Desain</a>
+                  </li>
+                  <li>
+                     <a href="#PD" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Konsultasi Online</a>
+                  </li>
+               </ul>
+            </div>
+
+            <button class="text-slate-600 hover:bg-gray-100 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center" type="button" data-dropdown-toggle="blog">Blog <i class="fa-solid fa-caret-down ml-2"></i></button>
+            <!-- Dropdown menu -->
+            <div class="hidden bg-white text-base rounded shadow my-4" id="blog">
+               <ul class="py-1" aria-labelledby="blog">
+                  <li>
+                     <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Blog</a>
+                  </li>
+               </ul>
+            </div>
+
+            <button class="text-slate-600 hover:bg-gray-100 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center" type="button" data-dropdown-toggle="menu">Mitra <i class="fa-solid fa-caret-down ml-2"></i></button>
+            <!-- Dropdown menu -->
+            <div class="hidden bg-white text-base rounded shadow my-4" id="menu">
+               <ul class="py-1" aria-labelledby="menu">
+                  <li>
+                     <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Mitra</a>
+                  </li>
+            </div>
+         </div>
+
+         <div class="relative ml-3">
+            <div>
+               <button type="button" class="rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                </button></button>
+            </div>
+         </div>
+      </div>
+      <!-- Navbar End -->
+
+      <!-- Content Start -->
+    <div class="bg-zinc-100 text-center" id="Home">
+    <!-- Title Start -->
+     <div>
+        <h2 class="font-medium leading-tight text-4xl text-slate-600 pt-40">Konsultasi Taman</h2>
+        <h2 class="font-medium leading-tight text-1xl text-slate-600 pt-5">Klik dibawah ini untuk memilih tanggal & waktu untuk memanggil konsultan kami</h2> 
+     </div>
+
+      <div class="flex justify-between px-16 py-5 items-center">  
+        <div class="flex w-6/12 items-center justify-center py-8 px-4 ml-6 h-full">
+         <div class="w-full h-full shadow-lg">
+             <div class="md:p-16 p-2 dark:bg-gray-800 bg-white h-full rounded-lg">
+                 <div class="px-4 flex items-center justify-between overflow-x-auto">
+                     <span  tabindex="0" class="focus:outline-none  text-base font-bold text-slate-600 text-lg">September 2022</span>
+                     <div class="flex items-center">
+                         <button aria-label="calendar backward" class="focus:text-gray-400 hover:text-gray-400 text-slate-600 dark:text-gray-100">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                             <polyline points="15 6 9 12 15 18" />
+                         </svg>
+                     </button>
+                     <button aria-label="calendar forward" class="focus:text-gray-400 hover:text-gray-400 ml-3 text-gray-800 dark:text-gray-100"> 
+                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler  icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                             <polyline points="9 6 15 12 9 18" />
+                         </svg>
+                     </button>
+
+                     </div>
+                 </div>
+                 <div class="flex items-center justify-between pt-12 overflow-x-auto">
+                     <table class="w-full">
+                         <thead>
+                             <tr>
+                                 <th>
+                                     <div class="w-full flex justify-center">
+                                         <p class="text-base font-medium text-center text-slate-600 dark:text-gray-100">Mo</p>
+                                     </div>
+                                 </th>
+                                 <th>
+                                     <div class="w-full flex justify-center">
+                                         <p class="text-base font-medium text-center text-slate-600 dark:text-gray-100">Tu</p>
+                                     </div>
+                                 </th>
+                                 <th>
+                                     <div class="w-full flex justify-center">
+                                         <p class="text-base font-medium text-center text-slate-600 dark:text-gray-100">We</p>
+                                     </div>
+                                 </th>
+                                 <th>
+                                     <div class="w-full flex justify-center">
+                                         <p class="text-base font-medium text-center text-slate-600 dark:text-gray-100">Th</p>
+                                     </div>
+                                 </th>
+                                 <th>
+                                     <div class="w-full flex justify-center">
+                                         <p class="text-base font-medium text-center text-slate-600 dark:text-gray-100">Fr</p>
+                                     </div>
+                                 </th>
+                                 <th>
+                                     <div class="w-full flex justify-center">
+                                         <p class="text-base font-medium text-center text-slate-600 dark:text-gray-100">Sa</p>
+                                     </div>
+                                 </th>
+                                 <th>
+                                     <div class="w-full flex justify-center">
+                                         <p class="text-base font-medium text-center text-slate-600 dark:text-gray-100">Su</p>
+                                     </div>
+                                 </th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td class="pt-6">
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center"></div>
+                                 </td>
+                                 <td class="pt-6">
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center"></div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center"></div>
+                                 </td>
+                                 <td class="pt-6">
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">1</p>
+                                     </div>
+                                 </td>
+                                 <td class="pt-6">
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">2</p>
+                                     </div>
+                                 </td>
+                                 <td class="pt-6">
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">3</p>
+                                     </div>
+                                 </td>
+                                 <td class="pt-6">
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">4</p>
+                                     </div>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">5</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">6</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">7</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="w-full h-full">
+                                         <div class="flex items-center justify-center w-full rounded-full cursor-pointer">
+                                             <a  role="link" tabindex="0" class="focus:outline-none  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-500 hover:bg-indigo-500 text-base w-8 h-8 flex items-center justify-center font-medium text-white bg-indigo-700 rounded-full">8</a>
+                                         </div>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">9</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">10</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">11</p>
+                                     </div>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">12</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">13</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">14</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">15</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">16</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">17</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">18</p>
+                                     </div>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">19</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">20</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">21</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">22</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">23</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">24</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">25</p>
+                                     </div>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">26</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">27</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">28</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">29</p>
+                                     </div>
+                                 </td>
+                                 <td>
+                                     <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                         <p class="text-base text-gray-500 dark:text-gray-100 font-medium">30</p>
+                                     </div>
+                                 </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="flex w-7/12 items-center justify-center py-8 px-4 ml-2">
+        <div class="w-full shadow-lg">
+            <div class="md:p-10 p-2 dark:bg-gray-800 bg-white max-h-full rounded-lg">
+                <div class="px-4 items-center justify-between text-center">
+                    <div class="font-bold dark:text-gray-100 text-slate-600 text-lg">Tuesday</div>
+                    <div class="font-medium text-base text-slate-600">Semptember 3, 2022</div>
+                </div>
+
+                <div class="text-left ml-5 ">
+                    <div class="font-bold dark:text-gray-100 text-slate-600 mt-6 text-lg">Pilih Waktu</div>
+                    <div class="font-medium leading-tight text-base text-slate-600">Durasi Konsultasi 30 Menit</div>
+                </div>
+
+                <div class="flex text-left overflow-x-auto">
+                    <div class="ml-5">
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">09.00</button>
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">10.00</button>
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">11.00</button>
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">12.00</button>
+                    </div>
+
+                    <div class="ml-6">
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">13.00</button>
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">14.00</button>
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">15.00</button>
+                        <button type="button" class="inline-block w-64 h-10 border-2 rounded-xl border-gray-400 text-blue-600/100 font-medium text-sm rounded hover:bg-blue-200 hover:bg-opacity-3 focus:outline-none focus:ring-0 transition duration-150 mt-6">16.00</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+    <div class="px-16 overflow-x-auto">  
+        <div class="ml-6 py-8 px-4 h-full">
+         <div class="w-full h-full shadow-lg">
+             <div class="bg-white h-full rounded-lg" id="PT">
+                <div class="divide-y-2 divide-slate-300">
+                <div class="md:p-20">
+                <div class="font-medium text-slate-600 text-left text-4xl">Informasi Data Diri</div>
+                <div class="flex justify-start">
+                    <label class="w-5/12">
+                        <div class="font-bold text-slate-600 text-left mt-10 text-lg">Nama Lengkap</div>
+                        <input
+                          type="text"
+                          class="
+                            mt-2
+                            pl-2
+                            rounded-md
+                            shadow-md
+                            bg-zinc-100
+                            w-full
+                            h-10
+                          " disabled
+                          placeholder="Yudha Wahyu" 
+                        />
+                      </label>
+                        <label class="w-5/12 ml-6">
+                            <div class="font-bold text-slate-600 text-left mt-10 text-lg">No HP</div>
+                            <input
+                              type="text"
+                              class="
+                                mt-2
+                                pl-4
+                                w-full
+                                rounded-md
+                                shadow-md
+                                bg-zinc-100
+                                w-full
+                                h-10
+                              " disabled
+                              placeholder="+6285223244747" 
+                            />
+                          </label>
+                </div>
+                
+                <div>
+                    <div class="flex mb-10">
+                        <div class="font-bold text-slate-600 text-left mt-10 text-sm">Alamat</div>
+                       <div class="w-full">
+                            <label class="block text-slate-600 text-left mt-10 ml-4 w-2/3" >
+                                <div
+                                  class="
+                                    border
+                                    border-4
+                                    border-emerald-700
+                                    block
+                                    w-full
+                                    h-34
+                                    rounded-xl
+                                  "
+                                ><div class="text-left mt-6 ml-6">
+                                    jl. serangkai 1 Perum. Bumi Jaya blok A No. 12 Kelurahan samping, Kecamatan Baru, Kota TanjungPinang, Kepulauan Riau 29125, Indonesia
+                                </div>
+                                <div class="text-right">
+                                    <button class="font-bold text-xs text-emerald-700 underline underline-offset-4 mt-6 pb-6 pr-4">Tambah Alamat Baru</button>
+                                </div>
+                                </div>
+                              </label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                    <div class="px-20" id="PD">
+                        <div class="text-left font-medium text-slate-600 text-4xl mt-10">
+                            Informasi Konsultasi Taman
+                        </div>
+                        <div class="text-left font-bold text-slate-600 mt-10 text-lg">
+                            Lahan Taman
+                        </div>
+                        <div class="text-left font-medium text-slate-600 mt-2 text-sm">
+                            Pilih jumlah lahan taman yang akan dibuat.
+                        </div>
+                        <div class="flex mt-4">
+                            <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg rounded-lg w-40 h-14 hover:bg-emerald-700 hover:text-white">
+                                1 Lahan Taman
+                            </button>
+                            <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg rounded-lg w-40 h-14 ml-6 hover:bg-emerald-700 hover:text-white">
+                                2 Lahan Taman
+                            </button>
+                            <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg rounded-lg w-64 h-14 ml-6 hover:bg-emerald-700 hover:text-white">
+                                Lebih dari 2 Lahan Taman
+                            </button>
+                        </div>
+
+                        <div class="text-left font-bold text-slate-600 mt-10 text-lg">
+                            Tema Taman
+                        </div>
+                        <div class="text-left font-medium text-slate-600 mt-2 text-sm">
+                            Pilih tema tanam yang akan dibuat.
+                        </div>
+                        <div class="bg-orange-200 mt-4 w-8/12 rounded-lg md:p-4 p-2">
+                            <div class="text-left font-bold text-slate-600 mt-2 text-sm">
+                                Catatan: <text class="font-medium">Jika anda belum memiliki inspirasi tema taman maka anda bisa melewati tahapan ini, konsultan kami akan memberikan rekomendasi terbaik untuk taman anda.</text>
+                            </div>
+                        </div>
+                        <div class="flex justify-start">
+                            <div class="rounded-lg shadow-lg bg-white w-72 mt-10 border border-4 border-gray-100 h-96">
+                              <a href="#!">
+                                <img class="rounded-lg" src="image/img1.jpg" alt=""/>
+                              </a>
+                              <div class="p-6">
+                                <h5 class="text-slate-600 text-lg font-bold mb-2 text-left">Taman Minimalis</h5>
+                                <p class="text-slate-600 text-xs font-medium text-left">
+                                  Taman yang indah dilahan yang sempit.
+                                </p>
+                                <button type="button" class="ml-48 inline-block px-6 py-2.5 text-emerald-700 underline underline-offset-4 font-medium text-sm leading-tight uppercase transition duration-150 ease-in-out mt-16">Pilih</button>
+                              </div>
+                            </div>
+
+                            <div class="rounded-lg shadow-lg bg-white w-72 mt-10 ml-14 border border-4 border-gray-100 h-96">
+                                <a href="#!">
+                                  <img class="rounded-lg" src="image/img5.jpg" alt=""/>
+                                </a>
+                                <div class="p-6">
+                                  <h5 class="text-slate-600 text-lg font-bold mb-2 text-left">Taman Kering</h5>
+                                  <p class="text-slate-600 text-xs font-medium text-left">
+                                    Taman yang yang dirancang untuk menghidupkan suasana alam di dalam dan di luar rumah.
+                                  </p>
+                                  <button type="button" class="ml-48 inline-block px-6 py-2.5 text-emerald-700 underline underline-offset-4 font-medium text-sm leading-tight uppercase transition duration-150 ease-in-out mt-8">Pilih</button>
+                                </div>
+                              </div>
+
+                              <div class="rounded-lg shadow-lg bg-white w-72 mt-10 ml-14 border border-4 border-gray-100 h-96">
+                                <a href="#!">
+                                  <img class="rounded-lg" src="image/img2.jpg" alt=""/>
+                                </a>
+                                <div class="p-6">
+                                  <h5 class="text-slate-600 text-lg font-bold mb-2 text-left">Taman Tropis</h5>
+                                  <p class="text-slate-600 text-xs font-medium text-left">
+                                    Taman yang paling sesuai dengan iklim di Indonesia.
+                                  </p>
+                                  <button type="button" class="ml-48 inline-block px-6 py-2.5 text-emerald-700 underline underline-offset-4 font-medium text-sm leading-tight uppercase transition duration-150 ease-in-out mt-12">Pilih</button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="text-left font-bold text-slate-600 text-lg px-20 mb-20 mt-16">
+                    Estimasi Ukuran Taman
+                    <div class="flex mt-4">
+                        <button class="bg-white border border-4 border-emerald-700 font-medium text-sm text-emerald-700 hover:bg-emerald-700 hover:text-white rounded-lg w-24 h-14">
+                            <i class="fa-solid fa-chevron-left">10M2</i>
+                        </button>
+                        <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg hover:bg-emerald-700 hover:text-white rounded-lg w-24 h-14 ml-6">
+                            11-20M2
+                        </button>
+                        <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg hover:bg-emerald-700 hover:text-white rounded-lg w-24 h-14 ml-6">
+                            21-30M2
+                        </button>
+                        <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg hover:bg-emerald-700 hover:text-white rounded-lg w-24 h-14 ml-6">
+                            31-40M2
+                        </button>
+                        <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg hover:bg-emerald-700 hover:text-white rounded-lg w-24 h-14 ml-6">
+                            41-50M2
+                        </button>
+                        <button class="bg-white border border-4 border-emerald-700 font-medium text-emerald-700 text-lg hover:bg-emerald-700 hover:text-white rounded-lg w-24 h-14 ml-6">
+                            51-60M2
+                        </button>
+                        <button class="bg-white border border-4 border-emerald-700 font-medium text-sm text-emerald-700 hover:bg-emerald-700 hover:text-white rounded-lg w-24 h-14 ml-6">
+                            <i class="fa-solid fa-chevron-right">100M2</i>
+                        </button>
+                      </div>
+                </div>
+
+                <div class="flex md:p-20 justify-end">
+                    <button class="bg-zinc-100 font-bold text-emerald-700 hover:bg-emerald-700 hover:text-white text-lg rounded-xl w-16 h-10">
+                        Batal
+                    </button>
+                    <button class="bg-emerald-700 font-bold text-white hover:bg-zinc-100 hover:text-emerald-700 text-lg rounded-xl w-16 h-10 ml-6">
+                        Oke
+                    </button>
+                  </div>
+                </div>
+             </div>
+         </div>
+        </div>
+    </div>
+    </div>
+   </body>
+</html>
